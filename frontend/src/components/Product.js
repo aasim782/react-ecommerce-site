@@ -3,17 +3,17 @@ import { Link } from 'react-router-dom';
 import { Card } from 'react-bootstrap';
 import Rating from './Rating';
 
-// // Animate on Scroll stuff.
-// import AOS from 'aos';
-// import 'aos/dist/aos.css';
-// AOS.init({ duration: 1000, once: false });
+// Animate on Scroll stuff.
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+AOS.init({ duration: 1000, once: false });
 
 const Product = ({ product }) => {
   return (
     <Card
       className="my-3 p-3 rounded"
-      // data-aos="flip-right"
-      // data-aos-easing="ease-in-sine"
+      data-aos="flip-right"
+      data-aos-easing="ease-in-sine"
     >
       <Link to={`/product/${product._id}`}>
         <Card.Img src={product.image} variant="top" />
