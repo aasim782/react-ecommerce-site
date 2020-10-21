@@ -1,12 +1,12 @@
-TheStore eCommerce Platform
-eCommerce webSite built with React, MongoDB, Express, NodeJS, Mongoose, Redux and several other technogies.
+#TheStore eCommerce Platform
+Live Demo - https://react-ecommerce-site.herokuapp.com/
 
-Features
+###Features
 Shopping cart
 Product reviews & ratings
 Top rated products carousel
 Product pagination
-Product search 
+Product search
 User profile maintenance and order list
 Admin product management
 Admin user management
@@ -37,13 +37,18 @@ npm install
 cd frontend
 npm install
 Run
+
 # Run frontend (:3000) & backend (:5000)
+
 npm run dev
 
 # Run backend only
+
 npm run server
 Build & Deploy
+
 # Create frontend prod build
+
 cd frontend
 npm run build
 There is a Heroku postbuild script, so if you push to Heroku, no need to build manually for deployment to Heroku
@@ -52,9 +57,11 @@ Seed Database
 You can use the following commands to seed the MongoDB database with some sample users and products as well as destroy all data
 
 # Import data
+
 npm run data:import
 
 # Destroy data
+
 npm run data:destroy
 Sample User Logins
 
