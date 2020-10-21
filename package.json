@@ -1,7 +1,7 @@
 {
-  "name": "react-ecommerce-site",
+  "name": "thestore",
   "version": "1.0.0",
-  "description": "React ecommerce app",
+  "description": "TheStore shopping cart app",
   "main": "server.js",
   "type": "module",
   "scripts": {
@@ -10,28 +10,19 @@
     "client": "npm start --prefix frontend",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
     "data:import": "node backend/seeder",
-    // "data:destroy": "node backend/seeder -d",
-    // "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix frontend && npm run build --prefix frontend"
+    "data:destroy": "node backend/seeder -d",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix frontend && npm run build --prefix frontend"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/scottwcode/react-ecommerce-site.git"
-  },
-  "author": "ScottW",
+  "author": "ScottWcode",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/scottwcode/react-ecommerce-site/issues"
-  },
-  "homepage": "https://github.com/scottwcode/react-ecommerce-site#readme",
   "dependencies": {
-    "aos": "^2.3.4",
     "bcryptjs": "^2.4.3",
     "colors": "^1.4.0",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "express-async-handler": "^1.1.4",
     "jsonwebtoken": "^8.5.1",
-    "mongoose": "^5.10.9",
+    "mongoose": "^5.10.6",
     "morgan": "^1.10.0",
     "multer": "^1.4.2"
   },
