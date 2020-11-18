@@ -26,6 +26,13 @@ h2 {
 .carousel-item.active {
   display: flex;
 }
+
+/* Added to have prev and next arrows be black with white background */
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+  filter: invert(1);
+}
+
 .carousel-caption {
   position: absolute;
   top: 0;
